@@ -1,0 +1,20 @@
+'''
+    'Leg raise clap', 'Reverse Crunch', \
+    0:00                0:30
+    'Spider man plank', 'Cross body mountain climbers', \
+    1:10                1:40
+    'Russian Twist', 'In and Out', \
+    2:20                2:50
+    'Plank with hip twist', 'Plank Jacks', \
+    3:30                    4:00
+    'One hundreds', 'Crunch', \
+    4:40            5:10
+    'Up and down plank', 'Plank', \
+    5:50                6:20
+    'Penguins' , 'Bicycles', \
+    7:00            7:30
+    'Reverse crunch leg extension' , 'Straight leg crunch', \
+    8:10                                8:40
+    'Up and down plank',  'done'
+    9:20                    9:50
+    '''

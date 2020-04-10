@@ -23,10 +23,10 @@ BREAK_LENGTH = 10
 '''
 May fail if text contains escape characters or certain non-alphanumeric characters
 '''
-def say(*text):
+def say(*text, speaker = 'Samantha'):
     # there is a strange bug where text is a tuple of characters instead of a str
     text = ''.join(text)
-    os.system('say {}'.format(text))
+    os.system('say -v {} {}'.format(speaker, text))
 
 def announce_break(currTime, warning_length = 15):
     currTime += (EXERCISE_LENGTH-warning_length)
@@ -55,7 +55,7 @@ if __name__ == '__main__':
         currTime += BREAK_LENGTH
 
     # Last exercise is standalone
-    s.enterabs(currTime, DEFAULT_PRIORITY, say, ('{} this is the last workout'.format(workout[-1])))
+    s.enterabs(currTime, DEFAULT_PRIORITY, say, ('{}, this is the last exercise'.format(workout[-1])))
     announce_exercise(currTime, 'we are done')
     currTime += EXERCISE_LENGTH
     s.enterabs(currTime, DEFAULT_PRIORITY, say, ('We are done. Great workout'))
